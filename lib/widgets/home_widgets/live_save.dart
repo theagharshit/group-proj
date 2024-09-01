@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:women_safety_app/widgets/home_widgets/live_save/buscard.dart';
-import 'package:women_safety_app/widgets/home_widgets/live_save/hospitalcard.dart';
-import 'package:women_safety_app/widgets/home_widgets/live_save/pharmacyCard.dart';
-import 'package:women_safety_app/widgets/home_widgets/live_save/policestation.dart';
+import 'package:women_safety_app/widgets/home_widgets/live_save/bus_card.dart';
+import 'package:women_safety_app/widgets/home_widgets/live_save/hospital_card.dart';
+import 'package:women_safety_app/widgets/home_widgets/live_save/pharmacy_card.dart';
+import 'package:women_safety_app/widgets/home_widgets/live_save/police_station_card.dart';
 
 class LiveSave extends StatelessWidget {
   const LiveSave({super.key});
