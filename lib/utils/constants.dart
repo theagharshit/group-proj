@@ -1,3 +1,13 @@
 import 'dart:ui';
 
-Color primaryColor = Color(0xffff6550,);
+import 'package:flutter/material.dart';
+
+Color primaryColor = Color(0xFFDB7FFF);
+
+void goto(BuildContext context, Widget nextScreen){
+  Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => nextScreen,
+      ));
+}
