@@ -62,6 +62,24 @@
       "languageVersion": "3.3"
     },
     {
+      "name": "firebase_core",
+      "rootUri": "file:///Users/rahulgupta/.pub-cache/hosted/pub.dev/firebase_core-2.24.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "firebase_core_platform_interface",
+      "rootUri": "file:///Users/rahulgupta/.pub-cache/hosted/pub.dev/firebase_core_platform_interface-5.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "firebase_core_web",
+      "rootUri": "file:///Users/rahulgupta/.pub-cache/hosted/pub.dev/firebase_core_web-2.10.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "flutter",
       "rootUri": "file:///Users/rahulgupta/development/flutter/packages/flutter",
       "packageUri": "lib/",
@@ -114,6 +132,12 @@
       "rootUri": "file:///Users/rahulgupta/.pub-cache/hosted/pub.dev/http_parser-4.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "js",
+      "rootUri": "file:///Users/rahulgupta/.pub-cache/hosted/pub.dev/js-0.6.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "leak_tracker",
@@ -362,7 +386,7 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2024-08-31T21:08:32.494598Z",
+  "generated": "2024-09-04T12:15:12.685974Z",
   "generator": "pub",
   "generatorVersion": "3.5.1",
   "flutterRoot": "file:///Users/rahulgupta/development/flutter",

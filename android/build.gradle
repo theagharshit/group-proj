@@ -1,3 +1,22 @@
+ext.kotlin_version = '2.0.10' // Use the latest compatible version
+
+buildscript {
+    ext.kotlin_version = '2.0.10'
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.1.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+configurations.all {
+    resolutionStrategy.force 'org.jetbrains.kotlin:kotlin-stdlib:1.7.10'
+    // Add other forced dependencies if necessary
+}
+
+
 allprojects {
     repositories {
         google()
