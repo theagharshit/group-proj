@@ -11,10 +11,6 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
-configurations.all {
-    resolutionStrategy.force 'org.jetbrains.kotlin:kotlin-stdlib:1.7.10'
-    // Add other forced dependencies if necessary
-}
 
 
 allprojects {
