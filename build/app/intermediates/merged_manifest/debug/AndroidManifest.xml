@@ -58,6 +58,7 @@
         <activity
             android:name="com.example.women_safety_app.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:enableOnBackInvokedCallback="true"
             android:exported="true"
             android:hardwareAccelerated="true"
             android:launchMode="singleTop"

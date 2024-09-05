@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.women_safety_app-mergeDebugResources-36:/values-pt-rBR/values-pt-rBR.xml",
+            "outputFile": "com.example.women_safety_app-mergeDebugResources-37:/values-pt-rBR/values-pt-rBR.xml",
             "map": [
                 {
-                    "source": "/Users/rahulgupta/.gradle/caches/transforms-3/e0b05af8fb5fa61280c493fe2d9d359c/transformed/browser-1.8.0/res/values-pt-rBR/values-pt-rBR.xml",
+                    "source": "/Users/rahulgupta/.gradle/caches/transforms-3/4513da61664c75b206cc2b7cae1f8df9/transformed/browser-1.8.0/res/values-pt-rBR/values-pt-rBR.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/rahulgupta/.gradle/caches/transforms-3/d697459a54d6aedf5d3092f103ebb131/transformed/core-1.13.1/res/values-pt-rBR/values-pt-rBR.xml",
+                    "source": "/Users/rahulgupta/.gradle/caches/transforms-3/77b2b97480d6eba52e0c157f6d9ec52a/transformed/core-1.13.1/res/values-pt-rBR/values-pt-rBR.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/rahulgupta/.gradle/caches/transforms-3/3264927017829e6c9d879c1ef97c7b65/transformed/jetified-play-services-basement-18.4.0/res/values-pt-rBR/values.xml",
+                    "source": "/Users/rahulgupta/.gradle/caches/transforms-3/c2da7c06f49b37bc087ced88d3eca947/transformed/jetified-play-services-basement-18.4.0/res/values-pt-rBR/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -55,7 +55,17 @@
                     }
                 },
                 {
-                    "source": "/Users/rahulgupta/.gradle/caches/transforms-3/ff0fc89fdb3e43259edb16b96bd5aa27/transformed/jetified-play-services-base-18.0.1/res/values-pt-rBR/values.xml",
+                    "source": "/Users/rahulgupta/.gradle/caches/transforms-3/9c8405407a48c6d29383a18b102f965f/transformed/jetified-credentials-1.2.0-rc01/res/values-pt-rBR/values-pt-rBR.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,164",
+                        "endColumns": "108,121",
+                        "endOffsets": "159,281"
+                    }
+                },
+                {
+                    "source": "/Users/rahulgupta/.gradle/caches/transforms-3/5aaa6826db31196cd055ab1520a031ed/transformed/jetified-play-services-base-18.0.1/res/values-pt-rBR/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -69,16 +79,6 @@
                         "startOffsets": "1021,1126,1274,1401,1509,1676,1806,1928,2178,2348,2456,2620,2750,2907,3064,3133,3199",
                         "endColumns": "104,147,126,107,166,129,121,104,169,107,163,129,156,156,68,65,83",
                         "endOffsets": "1121,1269,1396,1504,1671,1801,1923,2028,2343,2451,2615,2745,2902,3059,3128,3194,3278"
-                    }
-                },
-                {
-                    "source": "/Users/rahulgupta/.gradle/caches/transforms-3/9116e467fcd4e445202a736db627e3af/transformed/jetified-credentials-1.2.0-rc01/res/values-pt-rBR/values-pt-rBR.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,164",
-                        "endColumns": "108,121",
-                        "endOffsets": "159,281"
                     }
                 }
             ]

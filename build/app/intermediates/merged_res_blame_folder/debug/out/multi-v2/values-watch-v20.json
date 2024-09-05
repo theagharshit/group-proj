@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.women_safety_app-mergeDebugResources-36:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.example.women_safety_app-mergeDebugResources-37:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "/Users/rahulgupta/.gradle/caches/transforms-3/3b71936a50ff4c2b89bf24679635a40e/transformed/jetified-play-services-auth-20.7.0/res/values-watch-v20/values.xml",
+                    "source": "/Users/rahulgupta/.gradle/caches/transforms-3/3a45d2e79e1458d0b5d77506d0e600e2/transformed/jetified-play-services-auth-20.7.0/res/values-watch-v20/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",
