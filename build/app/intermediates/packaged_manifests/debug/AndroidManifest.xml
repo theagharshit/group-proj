@@ -72,6 +72,9 @@
                  to determine the Window background behind the Flutter UI.
             -->
             <meta-data
+                android:name="com.google.firebase.analytics.APPLICATION_ID"
+                android:value="1:139830980256:android:6ea2093fe37d486f5a63c5" />
+            <meta-data
                 android:name="io.flutter.embedding.android.NormalTheme"
                 android:resource="@style/NormalTheme" />
 
@@ -93,6 +96,9 @@
             android:name="com.google.firebase.components.ComponentDiscoveryService"
             android:directBootAware="true"
             android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />

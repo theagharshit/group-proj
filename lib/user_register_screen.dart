@@ -1,5 +1,7 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:women_safety_app/model/user_model.dart';
 import 'package:women_safety_app/utils/constants.dart';
 
 import 'components/custom_text_field.dart';
@@ -13,6 +15,7 @@ class RegisterUserScreen extends StatefulWidget {
 }
 
 class _RegisterUserScreenState extends State<RegisterUserScreen> {
+
   bool showPassword = true;
 
   final _formKey = GlobalKey<FormState>();
@@ -26,13 +29,29 @@ class _RegisterUserScreenState extends State<RegisterUserScreen> {
     }else{
       progressIndicator(context);
       try{
-        FirebaseAuth auth=FirebaseAuth.instance;
+        FirebaseAuth auth = FirebaseAuth.instance;
         auth.createUserWithEmailAndPassword(
             email: _formData['email'].toString(),
-            password: _formData['password'].toString()).whenComplete(()=>goto(context, LoginScreen()));
-      }on FirebaseAuthException catch(e){
+            password: _formData['password'].toString())
+            .then((v) async{
+              DocumentReference<Map<String, dynamic>> db =
+                FirebaseFirestore.instance.collection('users').doc(v.user!.uid);
+              final user = UserModel(
+                name: _formData['name'].toString(),
+                id: v.user!.uid,
+                phone: _formData['phone'].toString(),
+                userEmail: _formData['uemail'].toString(),
+                guardianEmail: _formData['gemail'].toString(),
+              );
+              final jsonData = user.toJson();
+              await db.set(jsonData).whenComplete((){
+              goto(context, LoginScreen());
+              });
+
+        });
+      } on FirebaseAuthException catch(e){
         dialoguebox(context, e.toString());
-      }catch(e){
+      } catch(e){
         dialoguebox(context, e.toString());
       }
     }
