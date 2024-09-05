@@ -20,6 +20,7 @@ class _RegisterUserScreenState extends State<RegisterGuardianScreen> {
 
   onSubmit(){
     _formKey.currentState!.save();
+    progressIndicator(context);
     print(_formData['email']);
     print(_formData['password']);
   }
@@ -161,7 +162,7 @@ class _RegisterUserScreenState extends State<RegisterGuardianScreen> {
                           isPassword: showPassword,
                           prefix: Icon(Icons.vpn_key_rounded),
                           onsave: (password){
-                            _formData['password'] = password ?? "";
+                            _formData['rpassword'] = password ?? "";
                           },
                           suffix: IconButton(
                             onPressed: () {

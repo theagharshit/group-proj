@@ -11,3 +11,21 @@ void goto(BuildContext context, Widget nextScreen){
         builder: (context) => nextScreen,
       ));
 }
+dialoguebox(BuildContext context, String text){
+  showDialog(
+    context: context,
+    builder: (context)=>AlertDialog(
+
+      title: Text(text),
+    ),);
+}
+progressIndicator(BuildContext context){
+  showDialog(
+      barrierDismissible:false,
+      context: context,
+      builder: (context) => Center(child: CircularProgressIndicator(
+        backgroundColor:primaryColor,
+        color: Colors.red,
+        strokeWidth: 7,
+      )));
+}

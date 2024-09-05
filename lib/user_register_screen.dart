@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:women_safety_app/utils/constants.dart';
 
@@ -20,6 +21,21 @@ class _RegisterUserScreenState extends State<RegisterUserScreen> {
 
   onSubmit(){
     _formKey.currentState!.save();
+    if(_formData['password']!= _formData['rpassword']){
+    dialoguebox(context, 'password and retype password should be same');
+    }else{
+      progressIndicator(context);
+      try{
+        FirebaseAuth auth=FirebaseAuth.instance;
+        auth.createUserWithEmailAndPassword(
+            email: _formData['email'].toString(),
+            password: _formData['password'].toString()).whenComplete(()=>goto(context, LoginScreen()));
+      }on FirebaseAuthException catch(e){
+        dialoguebox(context, e.toString());
+      }catch(e){
+        dialoguebox(context, e.toString());
+      }
+    }
     print(_formData['email']);
     print(_formData['password']);
   }
@@ -161,7 +177,7 @@ class _RegisterUserScreenState extends State<RegisterUserScreen> {
                           isPassword: showPassword,
                           prefix: Icon(Icons.vpn_key_rounded),
                           onsave: (password){
-                            _formData['password'] = password ?? "";
+                            _formData['rpassword'] = password ?? "";
                           },
                           suffix: IconButton(
                             onPressed: () {
@@ -183,8 +199,9 @@ class _RegisterUserScreenState extends State<RegisterUserScreen> {
                         PrimaryButton(
                             title: 'Register',
                             onPressed: () {
-                              if(_formKey.currentState!.validate())
-                                onSubmit();
+                              progressIndicator(context);
+                              // if(_formKey.currentState!.validate())
+                              //   onSubmit();
                             }),
                       ],
                     ),
