@@ -1,0 +1,1 @@
+ /Users/rahulgupta/StudioProjects/women_safety_app/group-proj/.dart_tool/flutter_build/11bf8404a1bc222ba458ff3b25a25338/native_assets.yaml: 
