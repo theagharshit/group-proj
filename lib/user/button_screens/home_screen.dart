@@ -6,7 +6,7 @@ import 'package:women_safety_app/widgets/home_widgets/custom_appBar.dart';
 import 'package:women_safety_app/widgets/home_widgets/emergency.dart';
 import 'package:women_safety_app/widgets/home_widgets/live_save.dart';
 
-import 'widgets/home_widgets/safehome/safe_home.dart';
+import '../../widgets/home_widgets/safehome/safe_home.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
